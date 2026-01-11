@@ -50,7 +50,7 @@ export function PackageCard({ package: pkg }: PackageCardProps) {
         {/* Duration and CTA */}
         <div className="flex items-center justify-between">
           <span className="text-sm font-semibold text-muted-foreground">{pkg.duration} days</span>
-          <Link href={`/packages/${pkg.id}`}>
+          <Link href={`/packages/₹{pkg.id}`}>
             <Button size="sm" className="bg-primary hover:bg-primary/90">
               View Details
             </Button>
