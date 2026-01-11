@@ -74,15 +74,15 @@ export function Footer() {
             <ul className="space-y-3 text-sm opacity-90">
               <li className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>hello@travelverse.com</span>
+                <span>prakshamkushwaha@gmail.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 98894 18043</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={16} />
-                <span>123 Travel St, NY 10001</span>
+                <span>123 Lane Jhansi, Uttar pradesh</span>
               </li>
             </ul>
           </div>
