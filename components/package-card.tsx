@@ -21,7 +21,7 @@ export function PackageCard({ package: pkg }: PackageCardProps) {
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute top-3 right-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
-          ${pkg.price}
+          ₹{pkg.price.toLocaleString("en-IN")} {/* changed from $ to ₹ and added Indian number formatting */}
         </div>
       </div>
 

@@ -48,20 +48,20 @@ async function sendEnquiryEmails(data: EnquiryFormData) {
           <p style="color: #6b7280; margin-bottom: 20px;">Hi ${data.fullName},</p>
           
           <p style="color: #4b5563; line-height: 1.6;">
-            We've received your enquiry for the <strong>${data.packageTitle}</strong> package. Our travel team is reviewing your request and will get back to you shortly.
+            Thank you for reaching out to us. We've received your enquiry for the <strong>${data.packageTitle}</strong> package. Our travel team is reviewing your request and will get back to you shortly.
           </p>
           
           <div style="background-color: #f0fdf4; border-left: 4px solid #16a34a; padding: 15px; margin: 20px 0; border-radius: 4px;">
             <h3 style="color: #15803d; margin-top: 0;">Your Enquiry Details</h3>
             <ul style="color: #166534; margin: 10px 0; padding-left: 20px;">
-              <li>Travel Date: ${data.travelDate}</li>
-              <li>Package: ${data.packageTitle}</li>
-              <li>Contact: ${data.phone}</li>
+              <li><strong>Package Selected:</strong> ${data.packageTitle}</li>
+              <li><strong>Travel Date:</strong> ${data.travelDate}</li>
+              <li><strong>Contact Number:</strong> ${data.phone}</li>
             </ul>
           </div>
           
           <p style="color: #4b5563; line-height: 1.6;">
-            Our team will review your enquiry and contact you within 24 hours. If you have any urgent questions, feel free to reach out to us directly.
+            We will review your enquiry and contact you within 24 hours. If you have any urgent questions, feel free to reach out to us directly.
           </p>
           
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
