@@ -91,7 +91,7 @@ export default function PackageDetailPage() {
 
             <div className="bg-accent/10 rounded-lg p-4 text-center border-2 border-accent">
               <p className="text-muted-foreground text-sm">Price</p>
-              <p className="font-bold text-accent text-2xl">${package_.price}</p>
+              <p className="font-bold text-accent text-2xl">₹{package_.price}</p>
               <p className="text-xs text-muted-foreground">per person</p>
             </div>
           </div>
