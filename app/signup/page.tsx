@@ -1,15 +1,12 @@
-"use client"
-import Link from "next/link"
 import { Navbar } from "@/components/navbar"
-import { LoginForm } from "@/components/login-form"
+import { SignupForm } from "@/components/signup-form"
 
+export const metadata = {
+  title: "Sign Up - TravelVerse",
+  description: "Create a new TravelVerse account and start booking amazing travel packages",
+}
 
-// export const metadata = {
-//   title: "Login - TravelVerse",
-//   description: "Login to your TravelVerse account and manage your bookings",
-// }
-
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -22,23 +19,16 @@ export default function LoginPage() {
                 <span className="text-primary-foreground font-bold text-2xl">✈</span>
               </div>
             </div>
-            <h1 className="text-3xl font-bold text-foreground mb-2">Welcome Back</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Create Account</h1>
             <p className="text-muted-foreground">
-              Login to explore amazing travel packages and book your dream vacation
+              Sign up now to start booking amazing travel packages and creating memories
             </p>
           </div>
 
-          {/* Login Form Card */}
+          {/* Signup Form Card */}
           <div className="bg-card rounded-xl border border-border p-8 shadow-sm">
-            <LoginForm />
+            <SignupForm />
           </div>
-
-          {/* Forgot Password Link */}
-          <p className="text-center text-muted-foreground text-sm mt-6">
-            <Link href="#" className="text-primary hover:underline">
-              Forgot your password?
-            </Link>
-          </p>
         </div>
       </div>
     </div>

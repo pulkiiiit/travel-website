@@ -8,12 +8,15 @@ import { Button } from "@/components/ui/button"
 import { RatingStars } from "@/components/rating-stars"
 import { travelPackages } from "@/lib/mock-data"
 import { MapPin, Calendar, Users, Plane, Hotel, Utensils, ArrowLeft, Share2 } from "lucide-react"
+import { useSession, signOut } from "next-auth/react";
 
 export default function PackageDetailPage() {
+  const { data: session, status } = useSession();
   const params = useParams()
   const id = params.id as string
 
   const package_ = travelPackages.find((pkg) => pkg.id === id)
+  if (status === "loading") return null;
 
   if (!package_) {
     return (
@@ -162,7 +165,7 @@ export default function PackageDetailPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href={`/enquiry/${package_.id}`} className="flex-1">
+              <Link href={session ? `/enquiry/${package_.id}` : `/login`} className="flex-1">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 w-full">
                   Enquire Now
                 </Button>
